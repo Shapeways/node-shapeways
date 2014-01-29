@@ -38,6 +38,21 @@ suite("Shapeways.Client", function(){
 
         });
 
+        test("options should set oauth token/secret", function(){
+            var options = {
+                baseUrl: "http://example.org",
+                consumerKey: "my-key",
+                consumerSecret: "my-secret",
+                oauthToken: "oauth-token",
+                oauthSecret: "oauth-secret",
+                authorizationCallback: "http://localhost:3000/callback",
+                apiVersion: "v2",
+            };
+            var client = new shapeways.client(options);
+            assert.equal("oauth-secret", client.oauthSecret);
+            assert.equal("oauth-token", client.oauthToken);
+        });
+
         test("should remove trailing slash from baseUrl", function(){
             var options = {
                 baseUrl: "http://example.org/",

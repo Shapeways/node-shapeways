@@ -36,12 +36,6 @@ Then access documentation at `/docs/index.html`
 ## Examples
 See `examples` directory.
 
-## TODO
-- [ ] Add Express Example
-- [ ] Setup Travis Build
-- [ ] Setup Coveralls
-- [ ] Setup ReadTheDocs for documentation
-
 ## License
 ```
 The MIT License (MIT) Copyright (c) 2014 Shapeways <api@shapeways.com> (http://developers.shapeways.com)

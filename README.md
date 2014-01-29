@@ -22,6 +22,7 @@ to [ShapeWaysJS](https://github.com/mikolalysenko/ShapeWaysJS) which was origina
 [mikolalysenko](https://github.com/mikolalysenko).
 
 ## API
+[Api Documentation](http://shapeways.github.io/node-shapeways)
 
 You can build documentation with.
 

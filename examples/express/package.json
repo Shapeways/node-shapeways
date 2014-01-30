@@ -1,0 +1,22 @@
+{
+  "name": "shapeways-example-app",
+  "version": "0.1.0",
+  "description": "Example NodeJS Shapeways App",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "jade": "~1.1.5",
+    "shapeways": "~1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shapeways",
+    "api",
+    "shapejs"
+  ],
+  "author": "",
+  "license": "MIT"
+}

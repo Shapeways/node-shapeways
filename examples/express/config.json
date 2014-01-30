@@ -1,0 +1,8 @@
+{
+    "app": {
+        "name": "My Cool Shapeways App",
+	    "key": "<APP KEY HERE>",
+	    "secret": "<APP SECRET HERE>"
+    },
+    "port": 3000
+}

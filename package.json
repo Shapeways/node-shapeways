@@ -1,6 +1,6 @@
 {
   "name": "shapeways",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "node.js module for accessing the Shapeways Api http://developers.shapeways.com/",
   "main": "lib/index.js",
   "scripts": {

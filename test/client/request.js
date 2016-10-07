@@ -177,11 +177,12 @@ suite("Shapeways.Client", function(){
 
         test("should call client.connection.post", function(done){
             var old_post = oauth.OAuth.prototype.post;
-            oauth.OAuth.prototype.post = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.post = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback(null, "{}");
             };
 
@@ -198,11 +199,12 @@ suite("Shapeways.Client", function(){
 
         test("should call client.connection.post with body", function(done){
             var old_post = oauth.OAuth.prototype.post;
-            oauth.OAuth.prototype.post = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.post = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, '{"nice":"body"}');
+                assert.equal(content_type, null);
                 callback(null, "{}");
             };
 
@@ -219,11 +221,12 @@ suite("Shapeways.Client", function(){
 
         test("should get error from client.connection.post", function(done){
             var old_post = oauth.OAuth.prototype.post;
-            oauth.OAuth.prototype.post = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.post = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback("an error");
             };
 
@@ -240,11 +243,12 @@ suite("Shapeways.Client", function(){
 
         test("should properly parse result from client.connection.post", function(done){
             var old_post = oauth.OAuth.prototype.post;
-            oauth.OAuth.prototype.post = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.post = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback(null, '{"key":"value"}');
             };
 
@@ -286,11 +290,12 @@ suite("Shapeways.Client", function(){
 
         test("should call client.connection.put", function(done){
             var old_put = oauth.OAuth.prototype.put;
-            oauth.OAuth.prototype.put = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.put = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback(null, "{}");
             };
 
@@ -307,11 +312,12 @@ suite("Shapeways.Client", function(){
 
         test("should call client.connection.put with body", function(done){
             var old_put = oauth.OAuth.prototype.put;
-            oauth.OAuth.prototype.put = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.put = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, '{"nice":"body"}');
+                assert.equal(content_type, null);
                 callback(null, "{}");
             };
 
@@ -328,11 +334,12 @@ suite("Shapeways.Client", function(){
 
         test("should get error from client.connection.put", function(done){
             var old_put = oauth.OAuth.prototype.put;
-            oauth.OAuth.prototype.put = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.put = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback("an error");
             };
 
@@ -349,11 +356,12 @@ suite("Shapeways.Client", function(){
 
         test("should properly parse result from client.connection.put", function(done){
             var old_put = oauth.OAuth.prototype.put;
-            oauth.OAuth.prototype.put = function(url, token, secret, body, callback){
+            oauth.OAuth.prototype.put = function(url, token, secret, body, content_type, callback){
                 assert.equal(url, "http://example.org/test");
                 assert.equal(token, "token");
                 assert.equal(secret, "secret");
                 assert.equal(body, null);
+                assert.equal(content_type, null);
                 callback(null, '{"key":"value"}');
             };
 

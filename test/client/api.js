@@ -394,9 +394,10 @@ suite("Shapeways.Client", function(){
     suite("client.addModelPhoto", function(){
         test("should build a correct url and call client.post", function(done){
             var old_post = shapeways.client.prototype.post;
-            shapeways.client.prototype.post = function(url, body, callback){
+            shapeways.client.prototype.post = function(url, body, content_type, callback){
                 assert.equal(url, "https://api.shapeways.com/models/86/photos/v1");
                 assert.equal(typeof(body), "string");
+                assert.equal(typeof(content_type), "string");
                 callback(null, {});
             };
 

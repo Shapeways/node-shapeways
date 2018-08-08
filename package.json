@@ -30,7 +30,6 @@
     "oauth": "~0.9.11",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
-    "simple-oauth2": "^2.2.0"
   },
   "devDependencies": {
     "mocha": "~1.17.0",
